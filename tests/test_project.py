@@ -1,3 +1,21 @@
+# Падали тесты из за отсутствия импортов, я их добавил
+# Я не знаю правлиьно ли я сделал или нет
+import pytest
+import sys
+import os
+from datetime import datetime, timedelta
+import tempfile
+from database.database_manager import DatabaseManager
+
+# Добавляем путь к модулям проекта
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
+from controllers.project_controller import ProjectController
+from controllers.task_controller import TaskController
+from models.project import Project
+from models.user import User
+
+
 class TestProjectController:
     """Тесты для ProjectController"""
 

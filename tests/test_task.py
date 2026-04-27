@@ -11,6 +11,10 @@ sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from controllers.task_controller import TaskController
 from controllers.project_controller import ProjectController
 from controllers.user_controller import UserController
+# Падали тесты из за отсутствия импортов, я их добавил
+# Я не знаю правлиьно ли я сделал или нет
+from models.project import Project
+from models.user import User
 
 
 class TestTaskController:
