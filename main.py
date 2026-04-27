@@ -12,9 +12,9 @@ from tkinter import messagebox
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 try:
-    from controllers.book_controller import BookController
-    from controllers.loan_controller import LoanController
-    from controllers.reader_controller import ReaderController
+    from controllers.task_controller import TaskController as BookController
+    from controllers.project_controller import ProjectController as LoanController
+    from controllers.user_controller import UserController as ReaderController
     from database.database_manager import DatabaseManager
     from views.main_window import MainWindow
 except ImportError as e:
